@@ -42,7 +42,6 @@ function mapPath(input, secondWire) {
             if (secondWire) {
                 var overlap = positions.filter(p => { return p.x == nextPosition.x && p.y == nextPosition.y});
                 if (overlap.length > 0) {
-                    console.log(nextPosition);
                     overlaps.push(currentPosition);
                     stepsList.push({
                         first: overlap[0].steps,

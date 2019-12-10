@@ -36,7 +36,6 @@ function mapPath(input, secondWire) {
             currentPosition = {...nextPosition};
 
             if (secondWire && positions.find(p => { return p.x == nextPosition.x && p.y == nextPosition.y})) {
-                console.log(nextPosition);
                 overlaps.push(currentPosition);
             }
 
