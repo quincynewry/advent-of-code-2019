@@ -19,15 +19,14 @@ function run() {
         if (match) {
             break;
         }
+
         noun++
     }
 }
 
 function process(noun, verb) {
-    // convert to array
     var sequence = input.split(',');
-
-    // do initial swap
+    
     sequence[1] = noun;
     sequence[2] = verb;
 
